@@ -10,12 +10,12 @@ export default {
         "accent-red": "#FF4F5A",
       }
     },
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    }
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+    // }
   },
   plugins: [],
 } satisfies Config;
