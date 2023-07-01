@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Feature from "~/components/home/Feature";
+import { Footer } from "~/components/home/Footer";
 import Hero from "~/components/home/Hero";
 
 import Nav from "~/components/home/Nav";
@@ -24,6 +25,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <Started />
+        <Footer />
       </div>
     </>
   );
