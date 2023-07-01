@@ -8,7 +8,7 @@ export default function Nav() {
     return (
         <div>
             {/*
-                使用justify-between可以让子级div左右分布；items-center使元素居中；h设置高度、px设置左右填充
+                使用justify-between可以让子级div左右分布；items-center使元素居中；h设置高度；px设置左右内边距
                 加入前缀[sm:]用于排除sm的size，使其动作失效
             */}
             <div className="flex justify-between items-center h-24 sm:px-28 px-2">
@@ -24,11 +24,11 @@ export default function Nav() {
                 {/* 复制svg代码改成Image引入，更灵活 */}
                 <Image src={Icon as string} alt='logo'/>
                 {/* span是行内元素，在div中不会独占一行 */}
-                <span className="text-accent-red font-bold">Todo Daily</span>
+                <span className="text-primary font-bold">Todo Daily</span>
             </div>
             {/* 子级本来就是行内元素可以不用flex，[flex gap-x-2]可以被替换为[space-x-2]，用于水平方向间隔 */}
             <div className="space-x-5">
-                <Link href="/" className="text-accent-red">
+                <Link href="/" className="text-primary">
                 login
                 </Link>
                 <Link href="/">

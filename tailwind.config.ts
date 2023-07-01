@@ -6,6 +6,7 @@ export default {
     extend: {
       // 自定义颜色，在className写入text-accent-red使用
       colors: {
+        "primary": "#FF4F5A",
         "accent-red": "#FF4F5A",
       }
     },
