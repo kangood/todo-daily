@@ -3,7 +3,12 @@ import { type Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      // 自定义颜色，在className写入text-accent-red使用
+      colors: {
+        "accent-red": "#FF4F5A",
+      }
+    },
     screens: {
       sm: '480px',
       md: '768px',
