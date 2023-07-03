@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 import Icon from "public/icon.svg";
+import { NavVariants } from "~/utils/motion";
 
 export default function Nav() {
   return (
-    <div>
+    // 使用variants调用自定义抽取变量；hidden和show为自定义名称
+    <motion.div initial="hidden" whileInView="show" variants={NavVariants}>
       {/*
           使用justify-between可以让子级div左右分布；items-center使元素居中；h设置高度；px设置左右内边距
           加入前缀[sm:]用于排除sm的size，使其动作失效
@@ -35,6 +39,6 @@ export default function Nav() {
           <Link href="/">Signup</Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,11 +1,20 @@
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 import Icon from "public/icon.svg";
+
+import { FooterVariants } from "~/utils/motion";
 
 export const Footer = () => {
   return (
     // border-t是在顶部添加分割线；然后border-指定颜色
-    <div className="justify-between border-t border-primary pt-4 sm:mx-28 sm:flex">
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      variants={FooterVariants}
+      className="justify-between border-t border-primary pt-4 sm:mx-28 sm:flex"
+    >
       {/* 左边 */}
       <div className="flex flex-col items-center gap-y-6">
         {/* 左上 */}
@@ -43,6 +52,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

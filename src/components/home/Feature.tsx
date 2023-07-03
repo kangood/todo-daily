@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const Feature = () => {
   return (
     <div>
@@ -6,8 +8,15 @@ export const Feature = () => {
       </div>
       {/* grid-cols-4表示内部竖着排列4个元素，[sm:]排除最小size的屏幕 */}
       <div className="mt-10 grid-cols-4 gap-x-4 px-14 sm:mb-20 sm:grid">
-        {/* grid使用网格布局；grid-rows-2表示内部横着排列2个元素；place-content-center用于居中 */}
-        <div className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2">
+        <motion.div
+          // initial是初始设置、whileInView是出现时设置、transition是过渡时设置；opacity是透明度，scale是比例，duration是时长，ease是缓动函数
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          // grid使用网格布局；grid-rows-2表示内部横着排列2个元素；place-content-center用于居中
+          className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2"
+        >
           {/* 
             因[className="fill-primary"]无法覆盖svg内部fill属性，遂放弃使用
             import FluentTasks from "public/fluent_tasks-app-28-filled.svg"
@@ -30,8 +39,14 @@ export const Feature = () => {
             />
           </svg>
           <div className="text-center">Small task</div>
-        </div>
-        <div className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2"
+        >
           <svg
             width="109"
             height="109"
@@ -39,7 +54,7 @@ export const Feature = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_12_56)">
+            <g clipPath="url(#clip0_12_56)">
               <path
                 d="M99.9167 19.3778L88.7139 8.17502C87.751 7.25692 86.4716 6.74475 85.1411 6.74475C83.8107 6.74475 82.5313 7.25692 81.5683 8.17502L71.6069 18.1667H18.1667C16.5606 18.1667 15.0204 18.8047 13.8847 19.9403C12.7491 21.076 12.1111 22.6162 12.1111 24.2222V90.8334C12.1111 92.4394 12.7491 93.9796 13.8847 95.1153C15.0204 96.2509 16.5606 96.8889 18.1667 96.8889H84.7778C86.3838 96.8889 87.9241 96.2509 89.0597 95.1153C90.1953 93.9796 90.8333 92.4394 90.8333 90.8334V35.6067L99.9167 26.5234C100.863 25.5753 101.395 24.2903 101.395 22.9506C101.395 21.6108 100.863 20.3258 99.9167 19.3778ZM57.0131 60.9492L44.3267 63.765L47.3544 51.1997L76.2697 22.2239L86.0494 32.0036L57.0131 60.9492ZM89.3194 28.552L79.5397 18.7722L85.1411 13.1708L94.9208 22.9506L89.3194 28.552Z"
                 className="fill-primary"
@@ -52,8 +67,14 @@ export const Feature = () => {
             </defs>
           </svg>
           <div className="text-center">Write it</div>
-        </div>
-        <div className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2"
+        >
           <svg
             width="109"
             height="109"
@@ -71,8 +92,14 @@ export const Feature = () => {
             />
           </svg>
           <div className="text-center">Do it</div>
-        </div>
-        <div className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2"
+        >
           <svg
             width="109"
             height="109"
@@ -86,7 +113,7 @@ export const Feature = () => {
             />
           </svg>
           <div className="text-center">Repeat</div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
