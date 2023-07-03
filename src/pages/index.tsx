@@ -17,16 +17,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       {/* 
-        这里的最顶级使用main标签也可以，对搜索引擎的支持会好一些；m-auto使container整体居中；h-screen是撑满浏览器高度；w-full是撑满父元素宽度
-        overflow-x-hidden是隐藏水平方向滚动条
+        这里的最顶级使用main或div标签都可以，main对搜索引擎的支持会好一些；m-auto使container整体居中； overflow-x-hidden是隐藏水平方向滚动条
       */}
-      <div className="m-auto h-full w-full overflow-hidden sm:container">
+      <main className="m-auto w-full overflow-hidden sm:container">
         <Nav />
         <Hero />
         <Feature />
         <Started />
         <Footer />
-      </div>
+      </main>
     </>
   );
 }

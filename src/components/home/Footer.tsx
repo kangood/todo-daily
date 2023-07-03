@@ -1,8 +1,4 @@
-import Image from "next/image";
-
 import { motion } from "framer-motion";
-
-import Icon from "public/icon.svg";
 
 import { FooterVariants } from "~/utils/motion";
 
@@ -19,7 +15,36 @@ export const Footer = () => {
       <div className="flex flex-col items-center gap-y-6">
         {/* 左上 */}
         <div className="flex items-center gap-x-3">
-          <Image src={Icon as string} alt="logo" />
+          <svg
+            width="41"
+            height="41"
+            viewBox="0 0 41 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="41" height="41" rx="3" className="fill-primary" />
+            <rect
+              x="15.375"
+              y="10.25"
+              width="21.7812"
+              height="5.125"
+              fill="white"
+            />
+            <rect
+              x="15.375"
+              y="19.2188"
+              width="21.7812"
+              height="5.125"
+              fill="white"
+            />
+            <rect
+              x="15.375"
+              y="28.1875"
+              width="21.7812"
+              height="5.125"
+              fill="white"
+            />
+          </svg>
           <div>
             <p>Lets change your habit</p>
             <p>join with million people</p>

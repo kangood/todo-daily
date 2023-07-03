@@ -18,7 +18,7 @@ export const Feature = () => {
           className="grid grid-rows-2 place-content-center gap-y-1 sm:gap-y-2"
         >
           {/* 
-            因[className="fill-primary"]无法覆盖svg内部fill属性，遂放弃使用
+            因next/image的[className="fill-primary"]无法覆盖svg内部fill属性，遂放弃使用
             import FluentTasks from "public/fluent_tasks-app-28-filled.svg"
             <Image
                 src={FluentTasks as string}

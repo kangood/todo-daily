@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    :root {
+        /* 全局颜色，在tailwind.config.ts中调用，或js代码直接读取 */
+      --main-accent: var(--accent-blue);
+  
+      --accent-yellow: 255 213 0;
+      --accent-blue: 29 155 240;
+      --accent-pink: 249 26 130;
+      --accent-purple: 120 87 255;
+      --accent-orange: 255 122 0;
+      --accent-green: 0 184 122;
+      --accent-red: 255 79 90;
+    }
+  }
