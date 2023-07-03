@@ -26,7 +26,7 @@ const Started = () => {
         transition={{ duration: 1 }}
         className="flex flex-col gap-y-8 pt-10"
       >
-        <p className="text-center text-3xl font-bold sm:text-left">
+        <p className="text-center text-3xl font-bold dark:text-white sm:text-left">
           Achieve your target and won your life
         </p>
         <div className="text-center sm:text-left">

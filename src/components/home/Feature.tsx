@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const Feature = () => {
   return (
     <div>
-      <div className="mt-10 py-5 text-center text-2xl font-bold">
+      <div className="mt-10 py-5 text-center text-2xl font-bold dark:text-white">
         Don’t let your day doing nothing
       </div>
       {/* grid-cols-4表示内部竖着排列4个元素，[sm:]排除最小size的屏幕 */}
@@ -38,7 +38,7 @@ export const Feature = () => {
               className="fill-primary"
             />
           </svg>
-          <div className="text-center">Small task</div>
+          <div className="text-center dark:text-white">Small task</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -66,7 +66,7 @@ export const Feature = () => {
               </clipPath>
             </defs>
           </svg>
-          <div className="text-center">Write it</div>
+          <div className="text-center dark:text-white">Write it</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -91,7 +91,7 @@ export const Feature = () => {
               className="fill-primary"
             />
           </svg>
-          <div className="text-center">Do it</div>
+          <div className="text-center dark:text-white">Do it</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -112,7 +112,7 @@ export const Feature = () => {
               className="fill-primary"
             />
           </svg>
-          <div className="text-center">Repeat</div>
+          <div className="text-center dark:text-white">Repeat</div>
         </motion.div>
       </div>
     </div>

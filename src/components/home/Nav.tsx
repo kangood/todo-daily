@@ -64,7 +64,9 @@ export default function Nav() {
           <Link href="/" className="text-primary">
             Login
           </Link>
-          <Link href="/">Sign up</Link>
+          <Link href="/" className="dark:text-white">
+            Sign up
+          </Link>
         </div>
       </div>
     </motion.div>

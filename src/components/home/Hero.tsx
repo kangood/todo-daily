@@ -15,7 +15,7 @@ export default function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", type: "spring" }}
         // text-center让文字在block内居中；w-[]设置宽度，超出就换行；my是上下外边距、px是左右内边距
-        className="m-auto my-10 w-[400px] px-1.5 text-center text-3xl font-bold"
+        className="m-auto my-10 w-[400px] px-1.5 text-center text-3xl font-bold dark:text-white"
       >
         Organizing your day activity with Todo Daily
       </motion.p>

@@ -9,7 +9,7 @@ export const Footer = () => {
       initial="hidden"
       whileInView="show"
       variants={FooterVariants}
-      className="justify-between border-t border-primary pt-4 sm:mx-28 sm:flex"
+      className="justify-between border-t border-primary pt-4 dark:text-white sm:mx-28 sm:flex"
     >
       {/* 左边 */}
       <div className="flex flex-col items-center gap-y-6">
